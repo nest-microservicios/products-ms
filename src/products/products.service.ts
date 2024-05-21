@@ -78,7 +78,6 @@ export class ProductsService extends PrismaClient implements OnModuleInit {
         },
       },
     });
-    console.log(products);
     if (products.length !== ids.length) {
       throw new RpcException({
         message: 'Some products where not found',
